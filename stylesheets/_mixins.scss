@@ -1,0 +1,10 @@
+@mixin flex-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin image {
+  max-width: 100%;
+  height: auto;
+}

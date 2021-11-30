@@ -1,0 +1,46 @@
+#bottom-inactive-div {
+  @include flex-display;
+}
+
+#user-details-div {
+  display: flex;
+}
+
+#avatar-div {
+  width: 2.5rem;
+  height: auto;
+  @include flex-display;
+}
+
+#avatar {
+  @include image;
+  border-radius: $circle;
+}
+
+#name-n-date {
+  margin-left: 10px;
+  p {
+    &:first-child {
+      color: $vdgb;
+      font-weight: 700;
+    }
+    &:last-child {
+      color: $ddb;
+    }
+  }
+}
+.share-icon-div {
+  border-radius: $circle;
+  background-color: $lgb;
+  width: 2.25rem;
+  height: 2.25rem;
+  @include flex-display;
+  justify-content: center;
+}
+.share-icon {
+  @include image;
+}
+
+#bottom-active-div {
+  display: none;
+}

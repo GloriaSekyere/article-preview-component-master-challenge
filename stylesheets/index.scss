@@ -5,11 +5,62 @@
 }
 
 @import "variables";
+@import "mixins";
+@import "bottomSection";
 
 body {
+  background-color: $lgb;
   font: {
     family: 'Manrope', sans-serif;
     size: 13px;
+  }
+}
+
+main {
+  width: 87.5%;
+  height: auto;
+  padding-bottom: 1.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+#bg-image-div {
+  width: 100%;
+  height: 215px;
+  border: {
+    top-left-radius: 10px;
+    top-right-radius: 10px;
+  }
+  background: {
+    image: url("../images/drawers.jpg");
+    size: cover;
+    repeat: no-repeat;
+  }
+}
+
+#content-div {
+  padding: 0 9%;
+}
+
+#content-text-div {
+  margin: 40px 0 30px;
+  p {
+    line-height: 1.6;
+    &:first-child {
+      color: $vdgb;
+      margin-bottom: 10px;
+      font: {
+        size: 16px;
+        weight: 700;
+      }
+    }
+    &:last-child {
+      color: $ddb;
+      }
   }
 }
 
