@@ -5,6 +5,21 @@
   padding: 0;
 }
 
+#wrapper-inactive {
+  display: none;
+  height: 65px;
+  padding: 0 9% 1.25rem;
+}
+
+#wrapper-active {
+  display: block;
+  height: 65px;
+  padding: 0 9% 1.25rem;
+  background-color: #48556a;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 #bottom-inactive-div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,6 +30,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#bottom-active-div {
+  width: inherit;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#bottom-active-div p {
+  color: #9eafc2;
+  letter-spacing: 5px;
 }
 
 #user-details-div {
@@ -44,7 +78,7 @@
 }
 
 #name-n-date {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 #name-n-date p:first-child {
@@ -56,7 +90,7 @@
   color: #6d7f97;
 }
 
-.share-icon-div {
+#share-icon-div-1, #share-icon-div-2 {
   border-radius: 50%;
   background-color: #ecf2f8;
   width: 2.25rem;
@@ -75,13 +109,28 @@
           justify-content: center;
 }
 
+#share-icon-div-2 {
+  background-color: #6d7f97;
+}
+
 .share-icon {
   max-width: 100%;
   height: auto;
 }
 
-#bottom-active-div {
-  display: none;
+#social-icons-div {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+#social-icons-div a {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#social-icons-div a img {
+  width: 20px;
+  height: auto;
 }
 
 body {
@@ -93,7 +142,6 @@ body {
 main {
   width: 87.5%;
   height: auto;
-  padding-bottom: 1.25rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -113,11 +161,8 @@ main {
   background-repeat: no-repeat;
 }
 
-#content-div {
-  padding: 0 9%;
-}
-
 #content-text-div {
+  padding: 0 9%;
   margin: 40px 0 30px;
 }
 

@@ -19,7 +19,6 @@ body {
 main {
   width: 87.5%;
   height: auto;
-  padding-bottom: 1.25rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,10 +42,11 @@ main {
 }
 
 #content-div {
-  padding: 0 9%;
+  
 }
 
 #content-text-div {
+  padding: 0 9%;
   margin: 40px 0 30px;
   p {
     line-height: 1.6;
