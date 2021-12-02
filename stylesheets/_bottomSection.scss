@@ -1,10 +1,12 @@
 #wrapper-inactive {
-  display: none;
+  opacity: 1;
+  display: block;
   height: 65px;
   padding: 0 9% 1.25rem;
 }
 #wrapper-active {
-  display: block;
+  display: none;
+  opacity: 0;
   height: 65px;
   padding: 0 9% 1.25rem;
   background-color: $vdgb;
@@ -17,11 +19,11 @@
 
 #bottom-inactive-div {
   @include flex-display;
-}
-#bottom-active-div {
   width: inherit;
   height: inherit;
-  @include flex-display;
+}
+#bottom-active-div {
+  @extend #bottom-inactive-div;
   p {
     color: $gb;
     letter-spacing: 5px;

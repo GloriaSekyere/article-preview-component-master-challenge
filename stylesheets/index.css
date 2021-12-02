@@ -6,13 +6,15 @@
 }
 
 #wrapper-inactive {
-  display: none;
+  opacity: 1;
+  display: block;
   height: 65px;
   padding: 0 9% 1.25rem;
 }
 
 #wrapper-active {
-  display: block;
+  display: none;
+  opacity: 0;
   height: 65px;
   padding: 0 9% 1.25rem;
   background-color: #48556a;
@@ -20,7 +22,7 @@
   border-bottom-right-radius: 10px;
 }
 
-#bottom-inactive-div {
+#bottom-inactive-div, #bottom-active-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,20 +32,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#bottom-active-div {
   width: inherit;
   height: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #bottom-active-div p {
