@@ -5,10 +5,9 @@
   padding: 0 9% 1.25rem;
 }
 #wrapper-active {
+  @extend #wrapper-inactive;
   display: none;
   opacity: 0;
-  height: 65px;
-  padding: 0 9% 1.25rem;
   background-color: $vdgb;
   border: {
     bottom-left-radius: 10px;

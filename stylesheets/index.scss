@@ -6,7 +6,7 @@
 
 @import "variables";
 @import "mixins";
-@import "bottomSection";
+
 
 body {
   background-color: $lgb;
@@ -41,26 +41,7 @@ main {
   }
 }
 
-#content-div {
-  
-}
 
-#content-text-div {
-  padding: 0 9%;
-  margin: 40px 0 30px;
-  p {
-    line-height: 1.6;
-    &:first-child {
-      color: $vdgb;
-      margin-bottom: 10px;
-      font: {
-        size: 16px;
-        weight: 700;
-      }
-    }
-    &:last-child {
-      color: $ddb;
-      }
-  }
-}
-
+@import "midSection";
+@import "bottomSection";
+@import "mediaQueries";
