@@ -1,0 +1,150 @@
+@media (min-width: 768px) {
+  
+  main {
+    width: 50%;
+    height: auto;
+    padding: 35px 0 10px;
+    @include flex-display;
+    //justify-content: flex-end;
+  }
+  
+  #bg-image-div {
+    flex-basis: 35%;
+    //height: 100%;
+    //width: 30%;
+    border: {
+      top-left-radius: 10px;
+      top-right-radius: 0;
+      bottom-left-radius: 10px;
+    }
+    background: {
+      image: url("../images/drawers.jpg");
+      size: cover;
+      repeat: no-repeat;
+    }
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+  }
+
+  #content-div {
+    flex-basis: 65%;
+  }
+
+  #content-text-div {
+    padding: 0 9%;
+    margin: 0 0 10px;
+    p {
+      line-height: 1.6;
+      &:first-child {
+        color: $vdgb;
+        margin-bottom: 10px;
+        font: {
+          size: 18px;
+          weight: 700;
+        }
+      }
+    }
+  }
+  #wrapper-inactive {
+    opacity: 1;
+    display: block;
+    height: 65px;
+    padding: 0 9% 1.25rem;
+  }
+  #wrapper-active {
+    height: 65px;
+    padding: 0 9% 1.25rem;
+    display: none;
+    opacity: 0;
+    background-color: $vdgb;
+    border: {
+      bottom-left-radius: 10px;
+      bottom-right-radius: 10px;
+    }
+  }
+  
+  
+  #bottom-inactive-div {
+    @include flex-display;
+    width: inherit;
+    height: inherit;
+  }
+  #bottom-active-div {
+    @include flex-display;
+    width: inherit;
+    height: inherit;
+    p {
+      color: $gb;
+      letter-spacing: 5px;
+    }
+  }
+  
+  
+  #user-details-div {
+    display: flex;
+  }
+  #avatar-div {
+    width: 2.5rem;
+    height: auto;
+    @include flex-display;
+  }
+  #avatar {
+    @include image;
+    border-radius: $circle;
+  }
+  #name-n-date {
+    margin-left: 15px;
+    p {
+      &:first-child {
+        color: $vdgb;
+        font-weight: 700;
+      }
+      &:last-child {
+        color: $ddb;
+      }
+    }
+  }
+  
+  
+  #share-icon-div-1 {
+    border-radius: $circle;
+    background-color: $lgb;
+    width: 2.25rem;
+    height: 2.25rem;
+    @include flex-display;
+    justify-content: center;
+  }
+  #share-icon-div-2 {
+    border-radius: $circle;
+    background-color: $lgb;
+    width: 2.25rem;
+    height: 2.25rem;
+    @include flex-display;
+    justify-content: center;
+    background-color: $ddb;
+  }
+  .share-icon {
+    @include image;
+  }
+  
+  #social-icons-div {
+    a {
+      display: inline-block;
+      margin-right: 15px;
+      img {
+        width: 20px;
+        height: auto;
+      }
+    }
+    flex-basis: 50%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+}
