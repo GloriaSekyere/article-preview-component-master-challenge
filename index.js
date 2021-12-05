@@ -2,7 +2,7 @@ let inactiveIcon = document.getElementById("share-icon-div-1");
 let activeIcon = document.getElementById("share-icon-div-2");
 
 let inactiveBlock = document.getElementById("wrapper-inactive");
-let activeBlock = document.getElementById("wrapper-active");
+let activeBlock = document.getElementById("wrapper-active-mobile");
 
 let isActive = false;
 

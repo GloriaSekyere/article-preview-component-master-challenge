@@ -1,17 +1,16 @@
 @media (min-width: 768px) {
   
   main {
-    width: 50%;
+    width:47%;
     height: auto;
     padding: 35px 0 10px;
     @include flex-display;
-    //justify-content: flex-end;
+    justify-content: flex-end;
   }
   
   #bg-image-div {
-    flex-basis: 35%;
-    //height: 100%;
-    //width: 30%;
+    height: 100%;
+    width: 40%;
     border: {
       top-left-radius: 10px;
       top-right-radius: 0;
@@ -22,17 +21,15 @@
       size: cover;
       repeat: no-repeat;
     }
-    /*position: absolute;
-    top: 0;
-    left: 0;*/
+      @include absolute-position;
   }
 
   #content-div {
-    flex-basis: 65%;
+    flex-basis: 60%;
   }
 
   #content-text-div {
-    padding: 0 9%;
+    padding: 0 30px;
     margin: 0 0 10px;
     p {
       line-height: 1.6;
@@ -46,13 +43,15 @@
       }
     }
   }
+
   #wrapper-inactive {
     opacity: 1;
     display: block;
     height: 65px;
-    padding: 0 9% 1.25rem;
+    padding: 0 30px 1.25rem;
   }
-  #wrapper-active {
+
+  #wrapper-active-mobile {
     height: 65px;
     padding: 0 9% 1.25rem;
     display: none;
@@ -70,16 +69,6 @@
     width: inherit;
     height: inherit;
   }
-  #bottom-active-div {
-    @include flex-display;
-    width: inherit;
-    height: inherit;
-    p {
-      color: $gb;
-      letter-spacing: 5px;
-    }
-  }
-  
   
   #user-details-div {
     display: flex;

@@ -53,14 +53,14 @@ main {
   color: #6d7f97;
 }
 
-#wrapper-inactive, #wrapper-active {
+#wrapper-inactive, #wrapper-active-mobile {
   opacity: 1;
   display: block;
   height: 65px;
   padding: 0 9% 1.25rem;
 }
 
-#wrapper-active {
+#wrapper-active-mobile {
   display: none;
   opacity: 0;
   background-color: #48556a;
@@ -171,7 +171,7 @@ main {
 
 @media (min-width: 768px) {
   main {
-    width: 50%;
+    width: 47%;
     height: auto;
     padding: 35px 0 10px;
     display: -webkit-box;
@@ -183,26 +183,29 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   #bg-image-div {
-    -ms-flex-preferred-size: 35%;
-        flex-basis: 35%;
+    height: 100%;
+    width: 40%;
     border-top-left-radius: 10px;
     border-top-right-radius: 0;
     border-bottom-left-radius: 10px;
     background-image: url("../images/drawers.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    /*position: absolute;
+    position: absolute;
     top: 0;
-    left: 0;*/
+    left: 0;
   }
   #content-div {
-    -ms-flex-preferred-size: 65%;
-        flex-basis: 65%;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
   }
   #content-text-div {
-    padding: 0 9%;
+    padding: 0 30px;
     margin: 0 0 10px;
   }
   #content-text-div p {
@@ -214,13 +217,13 @@ main {
     font-size: 18px;
     font-weight: 700;
   }
-  #wrapper-inactive, #wrapper-active {
+  #wrapper-inactive, #wrapper-active-mobile {
     opacity: 1;
     display: block;
     height: 65px;
-    padding: 0 9% 1.25rem;
+    padding: 0 30px 1.25rem;
   }
-  #wrapper-active {
+  #wrapper-active-mobile {
     height: 65px;
     padding: 0 9% 1.25rem;
     display: none;
@@ -241,23 +244,6 @@ main {
             align-items: center;
     width: inherit;
     height: inherit;
-  }
-  #bottom-active-div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: inherit;
-    height: inherit;
-  }
-  #bottom-active-div p {
-    color: #9eafc2;
-    letter-spacing: 5px;
   }
   #user-details-div {
     display: -webkit-box;
