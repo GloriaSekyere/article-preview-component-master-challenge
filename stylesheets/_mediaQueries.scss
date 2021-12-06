@@ -62,6 +62,21 @@
       bottom-right-radius: 10px;
     }
   }
+
+  #wrapper-active-desktop {
+    visibility: visible;
+    //opacity: 1;
+    @include flex-display;
+    justify-content: center;
+    background-color: $vdgb;
+    border-radius: 10px;
+    position: absolute;
+    width: 250px;
+    height: 55px;
+    &::after {
+      @include arrow;
+    }
+  }
   
   
   #bottom-inactive-div {
@@ -69,32 +84,32 @@
     width: inherit;
     height: inherit;
   }
-  
-  #user-details-div {
-    display: flex;
-  }
-  #avatar-div {
-    width: 2.5rem;
-    height: auto;
+
+  #bottom-active-desktop {
     @include flex-display;
+    justify-content: center;
+    p {@include share-text;}
+    width: 70%;
   }
-  #avatar {
-    @include image;
-    border-radius: $circle;
+  .social-icons-div {
+    @include flex-display;
+    justify-content: flex-end;
+    flex-basis: 50%;
+    //background-color: rebeccapurple;
   }
-  #name-n-date {
-    margin-left: 15px;
-    p {
-      &:first-child {
-        color: $vdgb;
-        font-weight: 700;
-      }
-      &:last-child {
-        color: $ddb;
-      }
+  .icon-div {
+    @include flex-display;
+    justify-content: center;
+    width: 25px;
+    margin: {
+      right: 0;
+      left: 15px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
     }
   }
-  
   
   #share-icon-div-1 {
     border-radius: $circle;
@@ -117,17 +132,7 @@
     @include image;
   }
   
-  #social-icons-div {
-    a {
-      display: inline-block;
-      margin-right: 15px;
-      img {
-        width: 20px;
-        height: auto;
-      }
-    }
-    flex-basis: 50%;
-  }
+  
   
   
   

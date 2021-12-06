@@ -13,3 +13,19 @@
   max-width: 100%;
   height: auto;
 }
+
+@mixin share-text {
+  color: $gb;
+  letter-spacing: 5px;
+}
+
+@mixin arrow {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: inherit;
+  position: absolute;
+  bottom: -7px;
+  left: 117.5px;
+  transform: rotate(45deg);
+}
