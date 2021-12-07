@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
   
   main {
-    width:47%;
+    width:725px;
     height: auto;
     padding: 35px 0 10px;
     @include flex-display;
@@ -11,17 +11,12 @@
   #bg-image-div {
     height: 100%;
     width: 40%;
+    @include absolute-position;
     border: {
       top-left-radius: 10px;
       top-right-radius: 0;
       bottom-left-radius: 10px;
-    }
-    background: {
-      image: url("../images/drawers.jpg");
-      size: cover;
-      repeat: no-repeat;
-    }
-      @include absolute-position;
+    } 
   }
 
   #content-div {
@@ -66,13 +61,20 @@
   #wrapper-active-desktop {
     visibility: visible;
     //opacity: 1;
+
     @include flex-display;
     justify-content: center;
     background-color: $vdgb;
     border-radius: 10px;
+    box-shadow: 0 2px 7.5px $vdgb;
+
     position: absolute;
+    top: 50%;
+    right: -10.5%;
+
     width: 250px;
     height: 55px;
+
     &::after {
       @include arrow;
     }
