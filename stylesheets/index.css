@@ -71,6 +71,7 @@ main {
 #wrapper-active-desktop {
   visibility: hidden;
   position: absolute;
+  opacity: 0;
 }
 
 #bottom-inactive-div, #bottom-active-div {
@@ -259,7 +260,8 @@ main {
     border-bottom-right-radius: 10px;
   }
   #wrapper-active-desktop {
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
