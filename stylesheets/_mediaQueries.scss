@@ -6,6 +6,7 @@
     padding: 35px 0 10px;
     @include flex-display;
     justify-content: flex-end;
+    overflow:visible;
   }
   
   #bg-image-div {
@@ -93,7 +94,6 @@
     @include flex-display;
     justify-content: flex-end;
     flex-basis: 50%;
-    //background-color: rebeccapurple;
   }
   .icon-div {
     @include flex-display;
