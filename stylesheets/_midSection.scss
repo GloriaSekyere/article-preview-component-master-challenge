@@ -1,18 +1,17 @@
 #content-text-div {
   padding: 0 9%;
   margin: 40px 0 30px;
+  h1 {
+    color: $vdgb;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font: {
+      size: 18px;
+      weight: 700;
+    }
+  }
   p {
     line-height: 1.6;
-    &:first-child {
-      color: $vdgb;
-      margin-bottom: 10px;
-      font: {
-        size: 16px;
-        weight: 700;
-      }
+    color: $ddb;
     }
-    &:last-child {
-      color: $ddb;
-      }
-  }
 }

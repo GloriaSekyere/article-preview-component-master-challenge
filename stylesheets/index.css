@@ -39,18 +39,16 @@ main {
   margin: 40px 0 30px;
 }
 
-#content-text-div p {
-  line-height: 1.6;
-}
-
-#content-text-div p:first-child {
+#content-text-div h1 {
   color: #48556a;
   margin-bottom: 10px;
-  font-size: 16px;
+  line-height: 1.6;
+  font-size: 18px;
   font-weight: 700;
 }
 
-#content-text-div p:last-child {
+#content-text-div p {
+  line-height: 1.6;
   color: #6d7f97;
 }
 
@@ -238,12 +236,10 @@ main {
     padding: 0 30px;
     margin: 0 0 10px;
   }
-  #content-text-div p {
-    line-height: 1.6;
-  }
-  #content-text-div p:first-child {
+  #content-text-div h1 {
     color: #48556a;
     margin-bottom: 10px;
+    line-height: 1.6;
     font-size: 18px;
     font-weight: 700;
   }

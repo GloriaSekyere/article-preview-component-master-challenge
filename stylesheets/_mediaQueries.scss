@@ -27,19 +27,17 @@
   #content-text-div {
     padding: 0 30px;
     margin: 0 0 10px;
-    p {
+    h1 {
+      color: $vdgb;
+      margin-bottom: 10px;
       line-height: 1.6;
-      &:first-child {
-        color: $vdgb;
-        margin-bottom: 10px;
-        font: {
-          size: 18px;
-          weight: 700;
-        }
+      font: {
+        size: 18px;
+        weight: 700;
       }
     }
   }
-
+  
   #wrapper-inactive {
     opacity: 1;
     display: block;
