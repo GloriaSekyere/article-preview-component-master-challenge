@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import "variables";
+
+body {
+  font: {
+    family: 'Manrope', sans-serif;
+    size: 13px;
+  }
+}
+
