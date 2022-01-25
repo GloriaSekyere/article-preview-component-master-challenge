@@ -16,11 +16,10 @@
 }
 
 #wrapper-active-desktop {
-  visibility: hidden;
   position: absolute;
-  opacity: 0;
+  top: -9999px;
+  right: -9999px;
 }
-
 
 #bottom-inactive-div {
   @include flex-display;
@@ -80,6 +79,7 @@
   height: 2.25rem;
   @include flex-display;
   justify-content: center;
+  cursor: pointer;
 }
 #share-icon-div-2 {
   @extend #share-icon-div-1;

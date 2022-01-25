@@ -69,9 +69,9 @@ main {
 }
 
 #wrapper-active-desktop {
-  visibility: hidden;
   position: absolute;
-  opacity: 0;
+  top: -9999px;
+  right: -9999px;
 }
 
 #bottom-inactive-div, #bottom-active-div {
@@ -188,6 +188,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 #share-icon-div-2 {
@@ -261,7 +262,6 @@ main {
   }
   #wrapper-active-desktop {
     opacity: 0;
-    visibility: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -278,7 +278,6 @@ main {
     border-radius: 10px;
     -webkit-box-shadow: 0 2px 7.5px #48556a;
             box-shadow: 0 2px 7.5px #48556a;
-    position: absolute;
     top: 50%;
     right: -10.5%;
     width: 250px;

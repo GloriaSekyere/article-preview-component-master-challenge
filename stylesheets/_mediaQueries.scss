@@ -60,14 +60,11 @@
 
   #wrapper-active-desktop {
     opacity: 0;
-    visibility: hidden;
     @include flex-display;
     justify-content: center;
     background-color: $vdgb;
     border-radius: 10px;
     box-shadow: 0 2px 7.5px $vdgb;
-
-    position: absolute;
     top: 50%;
     right: -10.5%;
 
